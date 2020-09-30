@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		175ADE3C996427F451A4210E /* Pods_Tap_Tap_ShankarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A969C89F9454EB9E30C1CBB /* Pods_Tap_Tap_ShankarTests.framework */; };
+		4135A29FA37AA9D51EE4D7A6 /* Pods_Tap_Tap_Shankar_Tap_Tap_ShankarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065353BF783B3797E3BD4B9C /* Pods_Tap_Tap_Shankar_Tap_Tap_ShankarUITests.framework */; };
+		5129B3E42496D649009F18EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129B3E32496D649009F18EC /* AppDelegate.swift */; };
+		5129B3EA2496D649009F18EC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129B3E92496D649009F18EC /* GameScene.swift */; };
+		5129B3EC2496D649009F18EC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129B3EB2496D649009F18EC /* GameViewController.swift */; };
+		5129B3EF2496D649009F18EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5129B3ED2496D649009F18EC /* Main.storyboard */; };
+		5129B3F12496D64A009F18EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5129B3F02496D64A009F18EC /* Assets.xcassets */; };
+		5129B3F42496D64A009F18EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5129B3F22496D64A009F18EC /* LaunchScreen.storyboard */; };
+		5129B3FF2496D64A009F18EC /* Tap_Tap_ShankarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129B3FE2496D64A009F18EC /* Tap_Tap_ShankarTests.swift */; };
+		5129B40A2496D64A009F18EC /* Tap_Tap_ShankarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129B4092496D64A009F18EC /* Tap_Tap_ShankarUITests.swift */; };
+		5129B4182496DB7F009F18EC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5129B4172496DB7F009F18EC /* GameScene.sks */; };
+		51421DDD24C257D10045EEED /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51421DDC24C257D10045EEED /* LeaderBoardViewController.swift */; };
+		5153334924AFE79400BCC77D /* SKNode Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5153334824AFE79400BCC77D /* SKNode Ext.swift */; };
+		5153334B24B3765100BCC77D /* CGFloat Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5153334A24B3765100BCC77D /* CGFloat Ext.swift */; };
+		5153334D24B376A100BCC77D /* UIColor Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5153334C24B376A100BCC77D /* UIColor Ext.swift */; };
+		5153335124B66B5500BCC77D /* HomeScreenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5153335024B66B5500BCC77D /* HomeScreenScene.swift */; };
+		5153335324B67B4800BCC77D /* HomeScreenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5153335224B67B4800BCC77D /* HomeScreenScene.sks */; };
+		5154E4CC24B90FD3001121C1 /* GameInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154E4CB24B90FD3001121C1 /* GameInformation.swift */; };
+		5154E4CE24B92755001121C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5154E4CD24B92754001121C1 /* GoogleService-Info.plist */; };
+		51566A4424ABD1D900006075 /* UIImage Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51566A4324ABD1D900006075 /* UIImage Ext.swift */; };
+		518AD36A24A525530007FA9A /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518AD36924A525530007FA9A /* SpriteKitButton.swift */; };
+		518AD37424A531360007FA9A /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518AD37324A531360007FA9A /* CharacterCollectionViewCell.swift */; };
+		518AD37624A531A00007FA9A /* CharacterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518AD37524A531A00007FA9A /* CharacterSelectionViewController.swift */; };
+		518CC90024BA5B6400960B44 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CC8FF24BA5B6400960B44 /* Networking.swift */; };
+		518CC90424BBC4AD00960B44 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CC90324BBC4AD00960B44 /* LobbyViewController.swift */; };
+		518CC90624BBCB1100960B44 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CC90524BBCB1100960B44 /* PlayerTableViewCell.swift */; };
+		518CC90824BBCE2700960B44 /* PreLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CC90724BBCE2700960B44 /* PreLobbyViewController.swift */; };
+		518CC90A24BD0A3100960B44 /* InviteCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CC90924BD0A3100960B44 /* InviteCodeTableViewCell.swift */; };
+		5198B7A1249821D50045147D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5198B7A0249821D50045147D /* Utils.swift */; };
+		519F30E1249975B100FC473F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F30E0249975B100FC473F /* Character.swift */; };
+		51A432DC24D8B3B900F11477 /* tap_tap_shankar.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 51A432DB24D8B3AA00F11477 /* tap_tap_shankar.mobileprovision */; };
+		51A9AA5F24C8D6EE00DA444B /* LeaderBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A9AA5E24C8D6EE00DA444B /* LeaderBoardTableViewCell.swift */; };
+		51A9AA6424C8E0FB00DA444B /* ModalPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A9AA6324C8E0FB00DA444B /* ModalPopUpViewController.swift */; };
+		51CFA6F324A69A980030B507 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CFA6F224A69A980030B507 /* LocalStorageService.swift */; };
+		6A8535559D5DCCB4F055F893 /* Pods_Tap_Tap_Shankar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E948A43F325C394F47ED0AE /* Pods_Tap_Tap_Shankar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5129B3FB2496D64A009F18EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5129B3D82496D648009F18EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5129B3DF2496D648009F18EC;
+			remoteInfo = "Tap Tap Shankar";
+		};
+		5129B4062496D64A009F18EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5129B3D82496D648009F18EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5129B3DF2496D648009F18EC;
+			remoteInfo = "Tap Tap Shankar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065353BF783B3797E3BD4B9C /* Pods_Tap_Tap_Shankar_Tap_Tap_ShankarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Tap_Shankar_Tap_Tap_ShankarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A969C89F9454EB9E30C1CBB /* Pods_Tap_Tap_ShankarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Tap_ShankarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5129B3E02496D649009F18EC /* Tap Tap Shankar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Tap Shankar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5129B3E32496D649009F18EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5129B3E92496D649009F18EC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5129B3EB2496D649009F18EC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5129B3EE2496D649009F18EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5129B3F02496D64A009F18EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5129B3F32496D64A009F18EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5129B3F52496D64A009F18EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5129B3FA2496D64A009F18EC /* Tap Tap ShankarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap Tap ShankarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5129B3FE2496D64A009F18EC /* Tap_Tap_ShankarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_Tap_ShankarTests.swift; sourceTree = "<group>"; };
+		5129B4002496D64A009F18EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5129B4052496D64A009F18EC /* Tap Tap ShankarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap Tap ShankarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5129B4092496D64A009F18EC /* Tap_Tap_ShankarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_Tap_ShankarUITests.swift; sourceTree = "<group>"; };
+		5129B40B2496D64A009F18EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5129B4172496DB7F009F18EC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		51421DDC24C257D10045EEED /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
+		5153334824AFE79400BCC77D /* SKNode Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode Ext.swift"; sourceTree = "<group>"; };
+		5153334A24B3765100BCC77D /* CGFloat Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat Ext.swift"; sourceTree = "<group>"; };
+		5153334C24B376A100BCC77D /* UIColor Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Ext.swift"; sourceTree = "<group>"; };
+		5153335024B66B5500BCC77D /* HomeScreenScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenScene.swift; sourceTree = "<group>"; };
+		5153335224B67B4800BCC77D /* HomeScreenScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HomeScreenScene.sks; sourceTree = "<group>"; };
+		5154E4CB24B90FD3001121C1 /* GameInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInformation.swift; sourceTree = "<group>"; };
+		5154E4CD24B92754001121C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51566A4324ABD1D900006075 /* UIImage Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage Ext.swift"; sourceTree = "<group>"; };
+		518AD36924A525530007FA9A /* SpriteKitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
+		518AD37324A531360007FA9A /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		518AD37524A531A00007FA9A /* CharacterSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewController.swift; sourceTree = "<group>"; };
+		518CC8FF24BA5B6400960B44 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		518CC90324BBC4AD00960B44 /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		518CC90524BBCB1100960B44 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		518CC90724BBCE2700960B44 /* PreLobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLobbyViewController.swift; sourceTree = "<group>"; };
+		518CC90924BD0A3100960B44 /* InviteCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCodeTableViewCell.swift; sourceTree = "<group>"; };
+		5198B7A0249821D50045147D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		519F30E0249975B100FC473F /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		51A432DB24D8B3AA00F11477 /* tap_tap_shankar.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = tap_tap_shankar.mobileprovision; sourceTree = "<group>"; };
+		51A9AA5E24C8D6EE00DA444B /* LeaderBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardTableViewCell.swift; sourceTree = "<group>"; };
+		51A9AA6324C8E0FB00DA444B /* ModalPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPopUpViewController.swift; sourceTree = "<group>"; };
+		51CFA6F224A69A980030B507 /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
+		51E2034224CE2593001A9080 /* Tap Tap Shankar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tap Tap Shankar.entitlements"; sourceTree = "<group>"; };
+		5A27B5CA0DA5F70BB6DD7263 /* Pods-Tap Tap Shankar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tap Shankar.debug.xcconfig"; path = "Target Support Files/Pods-Tap Tap Shankar/Pods-Tap Tap Shankar.debug.xcconfig"; sourceTree = "<group>"; };
+		5E948A43F325C394F47ED0AE /* Pods_Tap_Tap_Shankar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Tap_Shankar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE207DAFC0A024ECCAEC205 /* Pods-Tap Tap ShankarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tap ShankarTests.debug.xcconfig"; path = "Target Support Files/Pods-Tap Tap ShankarTests/Pods-Tap Tap ShankarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		735085675B1F3B4A54BB972C /* Pods-Tap Tap Shankar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tap Shankar.release.xcconfig"; path = "Target Support Files/Pods-Tap Tap Shankar/Pods-Tap Tap Shankar.release.xcconfig"; sourceTree = "<group>"; };
+		85FE927C6DEAE61A484E76E8 /* Pods-Tap Tap Shankar-Tap Tap ShankarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tap Shankar-Tap Tap ShankarUITests.release.xcconfig"; path = "Target Support Files/Pods-Tap Tap Shankar-Tap Tap ShankarUITests/Pods-Tap Tap Shankar-Tap Tap ShankarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D4D3449B281AE9C863D3935A /* Pods-Tap Tap ShankarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tap ShankarTests.release.xcconfig"; path = "Target Support Files/Pods-Tap Tap ShankarTests/Pods-Tap Tap ShankarTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEF844C6A9F2ADEECEACD9EB /* Pods-Tap Tap Shankar-Tap Tap ShankarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Tap Shankar-Tap Tap ShankarUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tap Tap Shankar-Tap Tap ShankarUITests/Pods-Tap Tap Shankar-Tap Tap ShankarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5129B3DD2496D648009F18EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8535559D5DCCB4F055F893 /* Pods_Tap_Tap_Shankar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5129B3F72496D64A009F18EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175ADE3C996427F451A4210E /* Pods_Tap_Tap_ShankarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5129B4022496D64A009F18EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4135A29FA37AA9D51EE4D7A6 /* Pods_Tap_Tap_Shankar_Tap_Tap_ShankarUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5082A8B8F0863B6755837B2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A27B5CA0DA5F70BB6DD7263 /* Pods-Tap Tap Shankar.debug.xcconfig */,
+				735085675B1F3B4A54BB972C /* Pods-Tap Tap Shankar.release.xcconfig */,
+				EEF844C6A9F2ADEECEACD9EB /* Pods-Tap Tap Shankar-Tap Tap ShankarUITests.debug.xcconfig */,
+				85FE927C6DEAE61A484E76E8 /* Pods-Tap Tap Shankar-Tap Tap ShankarUITests.release.xcconfig */,
+				5EE207DAFC0A024ECCAEC205 /* Pods-Tap Tap ShankarTests.debug.xcconfig */,
+				D4D3449B281AE9C863D3935A /* Pods-Tap Tap ShankarTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5129B3D72496D648009F18EC = {
+			isa = PBXGroup;
+			children = (
+				51A432DB24D8B3AA00F11477 /* tap_tap_shankar.mobileprovision */,
+				5129B3E22496D649009F18EC /* Tap Tap Shankar */,
+				5129B3FD2496D64A009F18EC /* Tap Tap ShankarTests */,
+				5129B4082496D64A009F18EC /* Tap Tap ShankarUITests */,
+				5129B3E12496D649009F18EC /* Products */,
+				5082A8B8F0863B6755837B2B /* Pods */,
+				5CD6E159D64B6BB0ABCCCC55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5129B3E12496D649009F18EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5129B3E02496D649009F18EC /* Tap Tap Shankar.app */,
+				5129B3FA2496D64A009F18EC /* Tap Tap ShankarTests.xctest */,
+				5129B4052496D64A009F18EC /* Tap Tap ShankarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5129B3E22496D649009F18EC /* Tap Tap Shankar */ = {
+			isa = PBXGroup;
+			children = (
+				51E2034224CE2593001A9080 /* Tap Tap Shankar.entitlements */,
+				5129B3E32496D649009F18EC /* AppDelegate.swift */,
+				518CC8FF24BA5B6400960B44 /* Networking.swift */,
+				51CFA6F124A69A7C0030B507 /* Services */,
+				518AD37124A530AB0007FA9A /* Models */,
+				518AD36E24A530550007FA9A /* View Controllers */,
+				51A9AA6224C8DFF400DA444B /* Views */,
+				518AD36F24A530680007FA9A /* Helpers */,
+				518AD37024A5307E0007FA9A /* SKS Files */,
+				518AD37224A530EE0007FA9A /* Cells */,
+				51566A4224ABD1B800006075 /* Extensions */,
+				5129B3ED2496D649009F18EC /* Main.storyboard */,
+				5129B3F02496D64A009F18EC /* Assets.xcassets */,
+				5129B3F22496D64A009F18EC /* LaunchScreen.storyboard */,
+				5154E4CD24B92754001121C1 /* GoogleService-Info.plist */,
+				5129B3F52496D64A009F18EC /* Info.plist */,
+			);
+			path = "Tap Tap Shankar";
+			sourceTree = "<group>";
+		};
+		5129B3FD2496D64A009F18EC /* Tap Tap ShankarTests */ = {
+			isa = PBXGroup;
+			children = (
+				5129B3FE2496D64A009F18EC /* Tap_Tap_ShankarTests.swift */,
+				5129B4002496D64A009F18EC /* Info.plist */,
+			);
+			path = "Tap Tap ShankarTests";
+			sourceTree = "<group>";
+		};
+		5129B4082496D64A009F18EC /* Tap Tap ShankarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5129B4092496D64A009F18EC /* Tap_Tap_ShankarUITests.swift */,
+				5129B40B2496D64A009F18EC /* Info.plist */,
+			);
+			path = "Tap Tap ShankarUITests";
+			sourceTree = "<group>";
+		};
+		51566A4224ABD1B800006075 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51566A4324ABD1D900006075 /* UIImage Ext.swift */,
+				5153334824AFE79400BCC77D /* SKNode Ext.swift */,
+				5153334A24B3765100BCC77D /* CGFloat Ext.swift */,
+				5153334C24B376A100BCC77D /* UIColor Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		518AD36D24A530360007FA9A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				518AD36924A525530007FA9A /* SpriteKitButton.swift */,
+				5153335024B66B5500BCC77D /* HomeScreenScene.swift */,
+				5129B3E92496D649009F18EC /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		518AD36E24A530550007FA9A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				518AD36D24A530360007FA9A /* Scenes */,
+				5129B3EB2496D649009F18EC /* GameViewController.swift */,
+				518CC90724BBCE2700960B44 /* PreLobbyViewController.swift */,
+				518CC90324BBC4AD00960B44 /* LobbyViewController.swift */,
+				518AD37524A531A00007FA9A /* CharacterSelectionViewController.swift */,
+				51421DDC24C257D10045EEED /* LeaderBoardViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		518AD36F24A530680007FA9A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5198B7A0249821D50045147D /* Utils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		518AD37024A5307E0007FA9A /* SKS Files */ = {
+			isa = PBXGroup;
+			children = (
+				5129B4172496DB7F009F18EC /* GameScene.sks */,
+				5153335224B67B4800BCC77D /* HomeScreenScene.sks */,
+			);
+			path = "SKS Files";
+			sourceTree = "<group>";
+		};
+		518AD37124A530AB0007FA9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				519F30E0249975B100FC473F /* Character.swift */,
+				5154E4CB24B90FD3001121C1 /* GameInformation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		518AD37224A530EE0007FA9A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				518AD37324A531360007FA9A /* CharacterCollectionViewCell.swift */,
+				518CC90524BBCB1100960B44 /* PlayerTableViewCell.swift */,
+				518CC90924BD0A3100960B44 /* InviteCodeTableViewCell.swift */,
+				51A9AA5E24C8D6EE00DA444B /* LeaderBoardTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		51A9AA6224C8DFF400DA444B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51A9AA6324C8E0FB00DA444B /* ModalPopUpViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51CFA6F124A69A7C0030B507 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				51CFA6F224A69A980030B507 /* LocalStorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5CD6E159D64B6BB0ABCCCC55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E948A43F325C394F47ED0AE /* Pods_Tap_Tap_Shankar.framework */,
+				065353BF783B3797E3BD4B9C /* Pods_Tap_Tap_Shankar_Tap_Tap_ShankarUITests.framework */,
+				0A969C89F9454EB9E30C1CBB /* Pods_Tap_Tap_ShankarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5129B3DF2496D648009F18EC /* Tap Tap Shankar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5129B40E2496D64A009F18EC /* Build configuration list for PBXNativeTarget "Tap Tap Shankar" */;
+			buildPhases = (
+				FEE63529130A9BCC5B7A1BD4 /* [CP] Check Pods Manifest.lock */,
+				5129B3DC2496D648009F18EC /* Sources */,
+				5129B3DD2496D648009F18EC /* Frameworks */,
+				5129B3DE2496D648009F18EC /* Resources */,
+				C131D519BE42C65894F4CE47 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tap Tap Shankar";
+			productName = "Tap Tap Shankar";
+			productReference = 5129B3E02496D649009F18EC /* Tap Tap Shankar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5129B3F92496D64A009F18EC /* Tap Tap ShankarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5129B4112496D64A009F18EC /* Build configuration list for PBXNativeTarget "Tap Tap ShankarTests" */;
+			buildPhases = (
+				F556F1F36242B49520469FF9 /* [CP] Check Pods Manifest.lock */,
+				5129B3F62496D64A009F18EC /* Sources */,
+				5129B3F72496D64A009F18EC /* Frameworks */,
+				5129B3F82496D64A009F18EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5129B3FC2496D64A009F18EC /* PBXTargetDependency */,
+			);
+			name = "Tap Tap ShankarTests";
+			productName = "Tap Tap ShankarTests";
+			productReference = 5129B3FA2496D64A009F18EC /* Tap Tap ShankarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5129B4042496D64A009F18EC /* Tap Tap ShankarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5129B4142496D64A009F18EC /* Build configuration list for PBXNativeTarget "Tap Tap ShankarUITests" */;
+			buildPhases = (
+				5E51C4BDD7024E397FE7C9BE /* [CP] Check Pods Manifest.lock */,
+				5129B4012496D64A009F18EC /* Sources */,
+				5129B4022496D64A009F18EC /* Frameworks */,
+				5129B4032496D64A009F18EC /* Resources */,
+				8B4F1F497690AE339F98C106 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5129B4072496D64A009F18EC /* PBXTargetDependency */,
+			);
+			name = "Tap Tap ShankarUITests";
+			productName = "Tap Tap ShankarUITests";
+			productReference = 5129B4052496D64A009F18EC /* Tap Tap ShankarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5129B3D82496D648009F18EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Brian Arias Cano";
+				TargetAttributes = {
+					5129B3DF2496D648009F18EC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5129B3F92496D64A009F18EC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5129B3DF2496D648009F18EC;
+					};
+					5129B4042496D64A009F18EC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5129B3DF2496D648009F18EC;
+					};
+				};
+			};
+			buildConfigurationList = 5129B3DB2496D648009F18EC /* Build configuration list for PBXProject "Tap Tap Shankar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5129B3D72496D648009F18EC;
+			productRefGroup = 5129B3E12496D649009F18EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5129B3DF2496D648009F18EC /* Tap Tap Shankar */,
+				5129B3F92496D64A009F18EC /* Tap Tap ShankarTests */,
+				5129B4042496D64A009F18EC /* Tap Tap ShankarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5129B3DE2496D648009F18EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5129B4182496DB7F009F18EC /* GameScene.sks in Resources */,
+				5153335324B67B4800BCC77D /* HomeScreenScene.sks in Resources */,
+				5129B3EF2496D649009F18EC /* Main.storyboard in Resources */,
+				51A432DC24D8B3B900F11477 /* tap_tap_shankar.mobileprovision in Resources */,
+				5129B3F12496D64A009F18EC /* Assets.xcassets in Resources */,
+				5129B3F42496D64A009F18EC /* LaunchScreen.storyboard in Resources */,
+				5154E4CE24B92755001121C1 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5129B3F82496D64A009F18EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5129B4032496D64A009F18EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E51C4BDD7024E397FE7C9BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tap Tap Shankar-Tap Tap ShankarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B4F1F497690AE339F98C106 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tap Tap Shankar-Tap Tap ShankarUITests/Pods-Tap Tap Shankar-Tap Tap ShankarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tap Tap Shankar-Tap Tap ShankarUITests/Pods-Tap Tap Shankar-Tap Tap ShankarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tap Tap Shankar-Tap Tap ShankarUITests/Pods-Tap Tap Shankar-Tap Tap ShankarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C131D519BE42C65894F4CE47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tap Tap Shankar/Pods-Tap Tap Shankar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tap Tap Shankar/Pods-Tap Tap Shankar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tap Tap Shankar/Pods-Tap Tap Shankar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F556F1F36242B49520469FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tap Tap ShankarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE63529130A9BCC5B7A1BD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tap Tap Shankar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5129B3DC2496D648009F18EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5153334924AFE79400BCC77D /* SKNode Ext.swift in Sources */,
+				518CC90A24BD0A3100960B44 /* InviteCodeTableViewCell.swift in Sources */,
+				5153335124B66B5500BCC77D /* HomeScreenScene.swift in Sources */,
+				5154E4CC24B90FD3001121C1 /* GameInformation.swift in Sources */,
+				518CC90424BBC4AD00960B44 /* LobbyViewController.swift in Sources */,
+				518CC90024BA5B6400960B44 /* Networking.swift in Sources */,
+				518AD37424A531360007FA9A /* CharacterCollectionViewCell.swift in Sources */,
+				51421DDD24C257D10045EEED /* LeaderBoardViewController.swift in Sources */,
+				518CC90624BBCB1100960B44 /* PlayerTableViewCell.swift in Sources */,
+				518AD37624A531A00007FA9A /* CharacterSelectionViewController.swift in Sources */,
+				5129B3EA2496D649009F18EC /* GameScene.swift in Sources */,
+				5153334D24B376A100BCC77D /* UIColor Ext.swift in Sources */,
+				51A9AA6424C8E0FB00DA444B /* ModalPopUpViewController.swift in Sources */,
+				518CC90824BBCE2700960B44 /* PreLobbyViewController.swift in Sources */,
+				51CFA6F324A69A980030B507 /* LocalStorageService.swift in Sources */,
+				5153334B24B3765100BCC77D /* CGFloat Ext.swift in Sources */,
+				518AD36A24A525530007FA9A /* SpriteKitButton.swift in Sources */,
+				5129B3EC2496D649009F18EC /* GameViewController.swift in Sources */,
+				519F30E1249975B100FC473F /* Character.swift in Sources */,
+				5129B3E42496D649009F18EC /* AppDelegate.swift in Sources */,
+				51A9AA5F24C8D6EE00DA444B /* LeaderBoardTableViewCell.swift in Sources */,
+				5198B7A1249821D50045147D /* Utils.swift in Sources */,
+				51566A4424ABD1D900006075 /* UIImage Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5129B3F62496D64A009F18EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5129B3FF2496D64A009F18EC /* Tap_Tap_ShankarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5129B4012496D64A009F18EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5129B40A2496D64A009F18EC /* Tap_Tap_ShankarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5129B3FC2496D64A009F18EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5129B3DF2496D648009F18EC /* Tap Tap Shankar */;
+			targetProxy = 5129B3FB2496D64A009F18EC /* PBXContainerItemProxy */;
+		};
+		5129B4072496D64A009F18EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5129B3DF2496D648009F18EC /* Tap Tap Shankar */;
+			targetProxy = 5129B4062496D64A009F18EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5129B3ED2496D649009F18EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5129B3EE2496D649009F18EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5129B3F22496D64A009F18EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5129B3F32496D64A009F18EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5129B40C2496D64A009F18EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5129B40D2496D64A009F18EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = tap_tap_shankar.mobileprovision;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5129B40F2496D64A009F18EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A27B5CA0DA5F70BB6DD7263 /* Pods-Tap Tap Shankar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tap Tap Shankar/Tap Tap Shankar.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 4VP4X3DU6A;
+				INFOPLIST_FILE = "Tap Tap Shankar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "Brian.Tap-Tap-Shankar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "tap tap shankar profile 3";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5129B4102496D64A009F18EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 735085675B1F3B4A54BB972C /* Pods-Tap Tap Shankar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tap Tap Shankar/Tap Tap Shankar.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 4VP4X3DU6A;
+				INFOPLIST_FILE = "Tap Tap Shankar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "Brian.Tap-Tap-Shankar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "tap tap shankar profile 3";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5129B4122496D64A009F18EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE207DAFC0A024ECCAEC205 /* Pods-Tap Tap ShankarTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VP4X3DU6A;
+				INFOPLIST_FILE = "Tap Tap ShankarTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Brian.Tap-Tap-ShankarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap Tap Shankar.app/Tap Tap Shankar";
+			};
+			name = Debug;
+		};
+		5129B4132496D64A009F18EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D3449B281AE9C863D3935A /* Pods-Tap Tap ShankarTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VP4X3DU6A;
+				INFOPLIST_FILE = "Tap Tap ShankarTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Brian.Tap-Tap-ShankarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap Tap Shankar.app/Tap Tap Shankar";
+			};
+			name = Release;
+		};
+		5129B4152496D64A009F18EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF844C6A9F2ADEECEACD9EB /* Pods-Tap Tap Shankar-Tap Tap ShankarUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VP4X3DU6A;
+				INFOPLIST_FILE = "Tap Tap ShankarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Brian.Tap-Tap-ShankarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tap Tap Shankar";
+			};
+			name = Debug;
+		};
+		5129B4162496D64A009F18EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85FE927C6DEAE61A484E76E8 /* Pods-Tap Tap Shankar-Tap Tap ShankarUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VP4X3DU6A;
+				INFOPLIST_FILE = "Tap Tap ShankarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Brian.Tap-Tap-ShankarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tap Tap Shankar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5129B3DB2496D648009F18EC /* Build configuration list for PBXProject "Tap Tap Shankar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5129B40C2496D64A009F18EC /* Debug */,
+				5129B40D2496D64A009F18EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5129B40E2496D64A009F18EC /* Build configuration list for PBXNativeTarget "Tap Tap Shankar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5129B40F2496D64A009F18EC /* Debug */,
+				5129B4102496D64A009F18EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5129B4112496D64A009F18EC /* Build configuration list for PBXNativeTarget "Tap Tap ShankarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5129B4122496D64A009F18EC /* Debug */,
+				5129B4132496D64A009F18EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5129B4142496D64A009F18EC /* Build configuration list for PBXNativeTarget "Tap Tap ShankarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5129B4152496D64A009F18EC /* Debug */,
+				5129B4162496D64A009F18EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5129B3D82496D648009F18EC /* Project object */;
+}

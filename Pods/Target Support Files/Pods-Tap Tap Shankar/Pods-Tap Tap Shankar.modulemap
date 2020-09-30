@@ -1,0 +1,6 @@
+framework module Pods_Tap_Tap_Shankar {
+  umbrella header "Pods-Tap Tap Shankar-umbrella.h"
+
+  export *
+  module * { export * }
+}
